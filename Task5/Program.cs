@@ -14,18 +14,18 @@ namespace Task5
                 Console.Write("Name: ");
                 name = Console.ReadLine();
 
-                bool hasDigit = false;
+                bool isNum = false;
 
                 for (int i = 0; i < name.Length; i++)
                 {
                     if (name[i] >= 48 && name[i] <= 57)
                     {
-                        hasDigit = true;
+                        isNum = true;
                         break;
                     }
                 }
 
-                if (hasDigit)
+                if (isNum)
                 {
                     Console.WriteLine("Name can't contain any numbers. Please try again.");
                 }
